@@ -1,0 +1,26 @@
+:root {
+    /* text styles */
+    --brand-font: 'Darumadrop One', sans-serif;
+    --text-font: 'Roboto Mono', monospace;
+
+    --text-color-primary: #000000;
+    --text-color-seconday: #737373;
+    
+    --text-sm: 20px;
+    --text-md: 30px;
+    --text-lg: 35px;
+    --text-xl: 55px;
+    --text-xxl-logo: 80px;
+
+    /* colors */
+    --bg-color: #f2f2f2;
+    --brand-color: #e74832;
+    --accent-color: #ffe580;
+    --accent-color-lt: #ffeb9d;
+
+    /* spacing */
+    --spacing-sm: 10px;
+    --spacing-md: 30px;
+    --spacing-lg: 70px;
+    --spacing-xl: 140px;
+}
