@@ -23,4 +23,46 @@
     --spacing-md: 30px;
     --spacing-lg: 70px;
     --spacing-xl: 140px;
+
+    --standard-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
+/* general element styles */
+
+html,
+body {
+    background-color: var(--bg-color);
+}
+
+body {
+    font-family: var(--text-font);
+    color: var(--text-color-primary);
+    margin: var(--spacing-md) 120px;
+}
+
+/* layout styles */
+
+
+/* button styles */
+.arrow-btn {
+    border: none;
+}
+.arrow-btn:hover {
+    transform: translateY(-10px);
+}
+.arrow-btn:active {
+    transform: translateY(-3px);
+    opacity: 80%;
+}
+
+/* header and hero */
+
+
+
+
+/* under development */
+/* about us */
+/* newsletter */
+/* dev blog */
+/* footer */
