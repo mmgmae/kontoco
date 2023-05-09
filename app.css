@@ -39,6 +39,8 @@ body {
     font-family: var(--text-font);
     color: var(--text-color-primary);
     margin: var(--spacing-md) 120px;
+    position: relative;
+    z-index: -2;
 }
 
 main {
@@ -56,6 +58,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 
@@ -63,9 +66,6 @@ main {
 .arrow-btn {
     border: none;
     background-color: transparent;
-}
-.arrow-btn img {
-    width: 100%;
 }
 .arrow-btn:hover {
     transform: translateY(-10px);
@@ -87,19 +87,56 @@ main {
 }
 
 .hero .left-col {
-    background-color: red;
+    justify-self: flex-start;
+    align-self: start;
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .left-col .speech-bubble-container {
+    position: relative;
+    width: 100%;
+}
+.hero .multi-col .speech-bubble{
+    content: url("assets/speech_bubble.png");
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* max-width: 600px; */
+    width: 100%;
+    height: 110%;
+}
+.hero .left-col .text-box-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin: 0 auto;
+    padding: var(--spacing-md) var(--spacing-sm);
 }
 .hero .left-col .text-box {
-    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 var(--spacing-sm) var(--spacing-md) var(--spacing-sm);
 }
 .hero .text-box h1 {
     font-size: var(--text-xl);
     font-weight: normal;
+    margin: 0;
+}
+#hero-arrow {
+    width: 70px;
 }
 
+
 .hero .right-col {
-    background-color: blue;
+    /* background-color: blue;
+    opacity: 50%; */
     width: 40%;
 }
 .hero .right-col img {
@@ -117,25 +154,40 @@ main {
 
 
 /* custom breakpoint */
-@media only screen and (max-width: 1000px) {
-
+@media only screen and (max-width: 1200px) {
     :root {
         --text-xl: 30px;
     }
+
+
+}
+@media only screen and (max-width: 1000px) {
+
+    #hero-arrow {
+        width: 40px;
+    }
     .header .logo #logo-img {
         width: 150px;
+    }
+
+}
+@media only screen and (max-width: 900px){
+
+    :root {
+        --text-xl: 25px;
     }
 }
 /* tablet */
 @media only screen and (max-width: 768px) {
     :root {
-        --text-xl: 25px;
+        --text-xl: 20px;
     }
     body {
         margin: var(--spacing-md) 50px;
     }
 
     /* header & hero */
+
 
 }
 /* mobile */
@@ -148,4 +200,8 @@ main {
     }
 
     /* header & hero */
+
+    #hero-arrow {
+        width: 25px;
+    }
 }
