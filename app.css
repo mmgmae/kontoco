@@ -9,7 +9,7 @@
     --text-sm: 20px;
     --text-md: 30px;
     --text-lg: 35px;
-    --text-xl: 55px;
+    --text-xl: 40px;
     --text-xxl-logo: 80px;
 
     /* colors */
@@ -41,12 +41,31 @@ body {
     margin: var(--spacing-md) 120px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* layout styles */
+.multi-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 /* button styles */
 .arrow-btn {
     border: none;
+    background-color: transparent;
+}
+.arrow-btn img {
+    width: 100%;
 }
 .arrow-btn:hover {
     transform: translateY(-10px);
@@ -57,7 +76,35 @@ body {
 }
 
 /* header and hero */
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+.header .logo #logo-img {
+    width: 250px;
+}
 
+.hero .left-col {
+    background-color: red;
+    width: 60%;
+}
+.hero .left-col .text-box {
+    background-color: transparent;
+}
+.hero .text-box h1 {
+    font-size: var(--text-xl);
+    font-weight: normal;
+}
+
+.hero .right-col {
+    background-color: blue;
+    width: 40%;
+}
+.hero .right-col img {
+    width: 100%;
+}
 
 
 
@@ -66,3 +113,39 @@ body {
 /* newsletter */
 /* dev blog */
 /* footer */
+
+
+
+/* custom breakpoint */
+@media only screen and (max-width: 1000px) {
+
+    :root {
+        --text-xl: 30px;
+    }
+    .header .logo #logo-img {
+        width: 150px;
+    }
+}
+/* tablet */
+@media only screen and (max-width: 768px) {
+    :root {
+        --text-xl: 25px;
+    }
+    body {
+        margin: var(--spacing-md) 50px;
+    }
+
+    /* header & hero */
+
+}
+/* mobile */
+@media only screen and (max-width: 550px) {
+    :root {
+        --text-xl: 20px;
+    }
+    body {
+        margin: var(--spacing-md) 10px;
+    }
+
+    /* header & hero */
+}
