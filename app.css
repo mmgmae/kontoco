@@ -166,6 +166,15 @@ main {
     #hero-arrow {
         width: 40px;
     }
+    .arrow-btn:hover {
+        transform: translateY(-4px);
+    }
+    .arrow-btn:active {
+        transform: translateY(-1.5px);
+        opacity: 80%;
+    }
+
+
     .header .logo #logo-img {
         width: 150px;
     }
@@ -204,4 +213,20 @@ main {
     #hero-arrow {
         width: 25px;
     }
+    .left-col .speech-bubble-container .text-box-container {
+        padding: var(--spacing-sm);
+        
+    }
+    .speech-bubble-container .text-box-container .text-box {
+        margin-bottom: 8px;
+    }
+
+    .hero .multi-col .left-col{
+        width: 70%;
+    }
+    .hero .multi-col .right-col {
+        width: 30%;
+        align-self: end;
+    }
+
 }
