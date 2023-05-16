@@ -61,14 +61,18 @@ main {
     align-items: center;
     position: relative;
 }
+.section {
+    margin-bottom: var(--spacing-xl);
+}
 
 h2 {
     margin: 0;
 }
 .section-line {
-    max-width: 400px;
+    width: 400px;
     border: 2px solid black;
-    margin-bottom: var(--text-lg);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 .card {
     font-family: var(--brand-font);
@@ -89,6 +93,9 @@ progress {
     background-color: var(--brand-color);
   }
 
+  p {
+    line-height: 2em;
+  }
 
 
 /* button styles */
@@ -219,6 +226,24 @@ progress {
     margin: 0;
 }
 /* about us */
+.about-us-section .content-container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+#spencer,
+#mae {
+    transition: all 0.15s ease;
+    filter: drop-shadow(0px 13px 5px rgba(0,0,0,0.25));
+}
+#spencer:hover,
+#mae:hover {
+    transform: translateY(-10px);
+    filter: drop-shadow(0px 20px 5px rgba(0,0,0,0.25));
+}
 /* newsletter */
 /* dev blog */
 /* footer */
