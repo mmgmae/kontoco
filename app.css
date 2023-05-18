@@ -79,6 +79,7 @@ h2 {
     box-shadow: var(--standard-box-shadow);
 }
 
+
 progress {
     display: block;
     height: 20px;
@@ -194,6 +195,7 @@ progress {
     justify-content: space-between;
     align-items: center;
     gap: 1em;
+    
 }
 .under-development-section .card {
     position: relative;
@@ -207,6 +209,12 @@ progress {
     aspect-ratio: 1/1;
     background-color: var(--accent-color);
     padding: var(--spacing-md);
+}
+.under-development-section .card .card-title{
+    margin: var(--spacing-sm) 0 0 0;
+}
+.under-development-section .card .card-text{
+    margin: 0;
 }
 .under-development-section .card::before {
     content: "📍";
