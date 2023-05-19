@@ -68,6 +68,9 @@ main {
 h2 {
     margin: 0;
 }
+h3 {
+    font-size: var(--text-sm);
+}
 .section-line {
     width: 400px;
     border: 2px solid black;
@@ -77,6 +80,21 @@ h2 {
 .card {
     font-family: var(--brand-font);
     box-shadow: var(--standard-box-shadow);
+    background-color: var(--accent-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: var(--spacing-md);
+}
+.card::before{
+    content: "📍";
+    font-size: 45px;
+    position: absolute;
+    top: -20px;
+    left: 43%;
 }
 
 
@@ -198,17 +216,9 @@ progress {
     
 }
 .under-development-section .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     width: 300px;
     height: 300px;
-    box-sizing: border-box;
     aspect-ratio: 1/1;
-    background-color: var(--accent-color);
-    padding: var(--spacing-md);
 }
 .under-development-section .card .card-title{
     margin: var(--spacing-sm) 0 0 0;
@@ -216,13 +226,7 @@ progress {
 .under-development-section .card .card-text{
     margin: 0;
 }
-.under-development-section .card::before {
-    content: "📍";
-    font-size: 45px;
-    position: absolute;
-    top: -20px;
-    left: 43%;
-}
+
 .under-development-section .card .progress-bar {
     display: flex;
     flex-direction: column;
@@ -234,6 +238,9 @@ progress {
     margin: 0;
 }
 /* about us */
+.about-us-section.section {
+    margin-bottom: var(--spacing-md);
+}
 .about-us-section .content-container {
     max-width: 700px;
     display: flex;
@@ -252,7 +259,53 @@ progress {
     transform: translateY(-10px);
     filter: drop-shadow(0px 20px 5px rgba(0,0,0,0.25));
 }
-/* newsletter */
+
+
+/* newsletter cta */
+.newsletter-section {
+    width: 100%;
+    margin: 0 var(--spacing-sm);
+}
+.newsletter-section .card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.newsletter-section .card::before{
+    top: -20px;
+    left: 47%;
+}
+.newsletter-section .card .card-title {
+    font-size: var(--text-md);
+}
+.newsletter-section .form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.newsletter-section .form-contents-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+.newsletter-section .form-input {
+    width: 100%;
+}
+.newsletter-section .form-contents-container input{
+    width: 100%;
+    background-color: var(--accent-color-lt);
+    font-family: var(--brand-font);
+    color: var(--text-color-primary);
+    font-size: var(--text-sm);
+    border: none;
+    padding: var(--spacing-sm);
+    text-align: center;
+}
+.newsletter-section .form-button {
+    align-self: flex-end;
+}
 /* dev blog */
 /* footer */
 footer {
@@ -284,6 +337,11 @@ footer {
 .footer-section .footer-link-container a:hover {
     color: var(--brand-color);
 }
+
+
+
+
+
 
 
 
