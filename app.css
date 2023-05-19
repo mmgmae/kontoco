@@ -270,6 +270,7 @@ progress {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: var(--spacing-lg);
 }
 .newsletter-section .card::before{
     top: -20px;
@@ -306,7 +307,55 @@ progress {
 .newsletter-section .form-button {
     align-self: flex-end;
 }
+
+
 /* dev blog */
+
+.blog-flex-container .blog-flex-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.blog-flex-item .blog-flex-card {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1/1;
+}
+
+.blog-flex-item .blog-flex-content {
+    text-align: left;
+}
+.blog-flex-container .blog-title {
+    font-size: var(--text-md);
+}
+.blog-flex-content .blog-date {
+    color: var(--text-color-seconday);
+    font-size: var(--text-sm);
+}
+.blog-flex-container .blog-text {
+    font-size: var(--text-sm);
+    line-height: 1.5em;
+}
+.blog-flex-item .blog-flex-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+.blog-flex-item .blog-flex-content button img {
+    width: 20px;
+}
+.blog-flex-item .blog-flex-content button a {
+    font-family: var(--brand-font);
+    color: var(--text-color-seconday);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    margin-bottom: 7px;
+}
 /* footer */
 footer {
     width: 100%;
