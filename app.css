@@ -308,6 +308,36 @@ progress {
 }
 /* dev blog */
 /* footer */
+footer {
+    width: 100%;
+}
+.footer-section {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+.footer-header h2 {
+    font-size: var(--text-xl);
+    font-family: var(--brand-font);
+    margin-bottom: var(--spacing-md);
+}
+.footer-section .footer-link-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: var(--text-sm);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section .footer-link-container a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color-primary);
+}
+.footer-section .footer-link-container a:hover {
+    color: var(--brand-color);
+}
+
 
 
 
